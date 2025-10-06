@@ -24,6 +24,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
     <div
       ref={containerRef}
       className="min-h-[400vh] w-full bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden"
+      style={{ position: 'relative' }}
     >
       <FloatingParticles count={25} />
 
