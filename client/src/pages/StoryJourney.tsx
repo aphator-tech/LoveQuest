@@ -66,7 +66,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 }}
-                className="text-xl md:text-2xl text-muted-foreground font-poetic max-w-2xl mx-auto leading-relaxed"
+                className="text-xl md:text-2xl text-muted-foreground font-poetic max-w-2xl mx-auto leading-relaxed relative z-10"
               >
                 Two souls,
                 <br />
@@ -224,7 +224,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
                   data-testid="button-continue"
                   onClick={onPropose}
                   size="lg"
-                  className="text-lg px-8 h-14 group"
+                  className="text-lg px-8 h-14 group relative"
                 >
                   <span className="flex items-center gap-2">
                     Continue

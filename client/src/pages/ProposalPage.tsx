@@ -80,15 +80,15 @@ export default function ProposalPage({ onYes }: ProposalPageProps) {
             data-testid="button-yes"
             onClick={onYes}
             size="lg"
-            className="text-2xl px-16 h-16 font-serif font-bold relative group overflow-visible"
+            className="text-2xl px-16 h-16 font-serif font-bold relative group"
           >
-            <span className="relative z-10 flex items-center gap-3">
+            <span className="relative z-20 flex items-center gap-3">
               <Heart className="w-6 h-6 fill-current" />
               Yes!
               <Heart className="w-6 h-6 fill-current" />
             </span>
             <motion.div
-              className="absolute inset-0 bg-primary rounded-md"
+              className="absolute inset-0 bg-primary rounded-md -z-10"
               animate={{
                 boxShadow: [
                   "0 0 20px rgba(217, 119, 216, 0.3)",

@@ -39,7 +39,7 @@ export default function PasswordGate({ onUnlock }: PasswordGateProps) {
         transition={{ duration: 0.8 }}
         className="relative z-10 w-full max-w-md"
       >
-        <div className="bg-card/80 backdrop-blur-xl border border-card-border rounded-lg p-8 shadow-2xl">
+        <div className="bg-card/80 backdrop-blur-xl border border-card-border rounded-lg p-8 shadow-2xl overflow-visible">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
