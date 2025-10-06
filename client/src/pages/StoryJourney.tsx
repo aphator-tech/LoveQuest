@@ -9,11 +9,11 @@ interface StoryJourneyProps {
 
 export default function StoryJourney({ onPropose }: StoryJourneyProps) {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-background via-primary/5 to-background relative overflow-y-auto">
+    <div className="min-h-screen w-full bg-gradient-to-b from-[#0a0a14] via-[#12101f] to-[#0a0a14] relative overflow-y-auto">
       <FloatingParticles count={25} />
 
       <div className="relative z-10 w-full">
-        <section className="min-h-screen flex items-center justify-center p-4 py-20">
+        <section className="min-h-screen flex items-center justify-center px-4 py-16 md:py-20">
           <div className="text-center space-y-8 max-w-3xl">
             <motion.div
               initial={{ scale: 0 }}
@@ -28,7 +28,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="font-serif text-4xl md:text-6xl font-bold text-foreground"
+              className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-white"
             >
               A Random Connection
             </motion.h2>
@@ -50,7 +50,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="text-xl md:text-2xl text-muted-foreground font-poetic max-w-2xl mx-auto leading-relaxed relative z-10"
+              className="text-lg md:text-xl lg:text-2xl text-gray-200 font-poetic max-w-2xl mx-auto leading-relaxed relative z-10"
             >
               Two souls,
               <br />
@@ -63,7 +63,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
           </div>
         </section>
 
-        <section className="min-h-screen flex items-center justify-center p-4 py-20">
+        <section className="min-h-screen flex items-center justify-center px-4 py-16 md:py-20">
           <div className="text-center space-y-8 max-w-3xl">
             <motion.div
               initial={{ scale: 0 }}
@@ -79,7 +79,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-serif text-4xl md:text-6xl font-bold text-foreground"
+              className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-white"
             >
               Hours Together, Miles Apart
             </motion.h2>
@@ -111,7 +111,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-xl md:text-2xl text-muted-foreground font-poetic max-w-2xl mx-auto leading-relaxed"
+              className="text-lg md:text-xl lg:text-2xl text-gray-200 font-poetic max-w-2xl mx-auto leading-relaxed"
             >
               Through voice calls and late-night talks,
               <br />
@@ -124,7 +124,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
           </div>
         </section>
 
-        <section className="min-h-screen flex items-center justify-center p-4 py-20">
+        <section className="min-h-screen flex items-center justify-center px-4 py-16 md:py-20">
           <div className="text-center space-y-8 max-w-3xl">
             <motion.div
               initial={{ scale: 0 }}
@@ -140,7 +140,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-serif text-4xl md:text-6xl font-bold text-foreground"
+              className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-white"
             >
               Everything About You
             </motion.h2>
@@ -169,7 +169,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-xl md:text-2xl text-muted-foreground font-poetic max-w-2xl mx-auto leading-relaxed"
+              className="text-lg md:text-xl lg:text-2xl text-gray-200 font-poetic max-w-2xl mx-auto leading-relaxed"
             >
               Your laugh, your voice, your thoughts...
               <br />
@@ -184,7 +184,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
           </div>
         </section>
 
-        <section className="min-h-screen flex items-center justify-center p-4 py-20">
+        <section className="min-h-screen flex items-center justify-center px-4 py-16 md:py-20">
           <div className="text-center space-y-8 max-w-3xl">
             <motion.div
               initial={{ scale: 0 }}
@@ -200,7 +200,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-serif text-4xl md:text-6xl font-bold text-foreground"
+              className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-white"
             >
               Distance Cannot Divide Us
             </motion.h2>
@@ -237,7 +237,7 @@ export default function StoryJourney({ onPropose }: StoryJourneyProps) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-xl md:text-2xl text-muted-foreground font-poetic max-w-2xl mx-auto leading-relaxed"
+              className="text-lg md:text-xl lg:text-2xl text-gray-200 font-poetic max-w-2xl mx-auto leading-relaxed"
             >
               Miles may separate us,
               <br />

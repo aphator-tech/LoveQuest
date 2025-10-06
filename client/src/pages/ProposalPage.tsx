@@ -31,7 +31,7 @@ export default function ProposalPage({ onYes }: ProposalPageProps) {
   ];
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-background via-primary/10 to-background flex items-center justify-center p-4 overflow-hidden relative">
+    <div className="min-h-screen w-full bg-gradient-to-br from-[#0a0a14] via-[#14101f] to-[#0a0a14] flex items-center justify-center p-4 overflow-hidden relative">
       <FloatingParticles count={40} />
 
       <div className="relative z-10 max-w-4xl w-full text-center">
@@ -50,7 +50,7 @@ export default function ProposalPage({ onYes }: ProposalPageProps) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-tight"
+          className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight"
         >
           Will You Be
           <br />
@@ -61,7 +61,7 @@ export default function ProposalPage({ onYes }: ProposalPageProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-xl md:text-2xl text-muted-foreground font-poetic mb-16 max-w-2xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl lg:text-2xl text-gray-200 font-poetic mb-12 md:mb-16 max-w-2xl mx-auto leading-relaxed"
         >
           Despite the distance, despite the miles,
           <br />

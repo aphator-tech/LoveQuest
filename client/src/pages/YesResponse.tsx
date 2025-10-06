@@ -16,7 +16,7 @@ export default function YesResponse() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-primary/20 via-background to-primary/10 flex items-center justify-center p-4 overflow-hidden relative">
+    <div className="min-h-screen w-full bg-gradient-to-br from-[#1a1328] via-[#0a0a14] to-[#1a1328] flex items-center justify-center p-4 overflow-hidden relative">
       {hearts.map((heart) => (
         <motion.div
           key={heart.id}
@@ -55,7 +55,7 @@ export default function YesResponse() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold text-primary mb-8 leading-tight">
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-primary mb-8 leading-tight">
             She Said Yes!
           </h1>
         </motion.div>
@@ -66,13 +66,13 @@ export default function YesResponse() {
           transition={{ delay: 1, duration: 0.8 }}
           className="space-y-6"
         >
-          <p className="text-2xl md:text-3xl text-foreground font-poetic leading-relaxed">
+          <p className="text-xl md:text-2xl lg:text-3xl text-white font-poetic leading-relaxed">
             Thank you for making me the
             <br />
             <span className="text-primary text-4xl font-bold">happiest person alive</span>
           </p>
 
-          <p className="text-xl md:text-2xl text-muted-foreground font-poetic max-w-2xl mx-auto leading-relaxed mt-8">
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-200 font-poetic max-w-2xl mx-auto leading-relaxed mt-8">
             No distance is too far,
             <br />
             no challenge too great,
@@ -110,7 +110,7 @@ export default function YesResponse() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1 }}
-          className="mt-16 text-lg text-muted-foreground font-poetic italic"
+          className="mt-12 md:mt-16 text-base md:text-lg text-gray-300 font-poetic italic"
           data-testid="text-forever"
         >
           This is just the beginning of our forever...

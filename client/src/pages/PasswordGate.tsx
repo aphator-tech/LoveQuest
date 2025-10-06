@@ -30,7 +30,7 @@ export default function PasswordGate({ onUnlock }: PasswordGateProps) {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-background via-primary/5 to-background flex items-center justify-center p-4 overflow-hidden">
+    <div className="min-h-screen w-full bg-gradient-to-br from-[#0a0a14] via-[#12101f] to-[#0a0a14] flex items-center justify-center p-4 overflow-hidden">
       <FloatingParticles count={30} />
       
       <motion.div
@@ -39,7 +39,7 @@ export default function PasswordGate({ onUnlock }: PasswordGateProps) {
         transition={{ duration: 0.8 }}
         className="relative z-10 w-full max-w-md"
       >
-        <div className="bg-card/80 backdrop-blur-xl border border-card-border rounded-lg p-8 shadow-2xl overflow-visible">
+        <div className="bg-[#0d0d18]/90 backdrop-blur-xl border border-primary/20 rounded-lg p-6 md:p-8 shadow-2xl overflow-visible">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,10 +53,10 @@ export default function PasswordGate({ onUnlock }: PasswordGateProps) {
                 <Lock className="w-8 h-8 text-primary" />
               )}
             </div>
-            <h1 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-2">
+            <h1 className="font-serif text-2xl md:text-4xl font-bold text-white mb-2">
               For Someone Special
             </h1>
-            <p className="text-muted-foreground text-sm">
+            <p className="text-gray-300 text-sm">
               Enter the password to continue
             </p>
           </motion.div>
